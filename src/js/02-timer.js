@@ -76,7 +76,7 @@ function updateTimer({ days, hours, minutes, seconds }) {
     refs.minutes.textContent = pad(minutes);
     refs.seconds.textContent = pad(seconds);
     
-}
+};
 
 function clearTimers() {
     refs.days.textContent = "00";
@@ -110,6 +110,6 @@ function convertMs(ms) {
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
 
   return { days, hours, minutes, seconds };
-}
+};
 
 
